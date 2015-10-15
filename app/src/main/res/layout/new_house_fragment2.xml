@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <TextView
+        android:alpha="0.5"
+        android:id="@+id/cityNameID"
+        android:background="#7d7d7d"
+        android:text="显示北京所有楼盘"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:alpha="0.5"
+        android:background="#7d7d7d"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/preBtn"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:src="@drawable/btn_map_left"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/currentPageID"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/nextBtn"
+
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:src="@drawable/btn_map_right"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

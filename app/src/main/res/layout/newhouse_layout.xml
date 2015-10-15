@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#77e9ff"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/currentCity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#77e9ff"
+            android:onClick="openCityList"
+            android:text="北京"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+        />
+
+        <android.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="200dp"
+            android:layoutMode="opticalBounds"
+            android:queryHint="区域/楼盘名/开发商"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/currentCity">
+
+        </android.widget.SearchView>
+        <ImageButton
+            android:id="@+id/saoID"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:background="#77e9ff"
+            android:src="@drawable/sao"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listViewWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_ershou" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/loupanInfoBtn"
+                android:onClick="btnClock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:text="楼盘信息" />
+
+            <Button
+                android:id="@+id/commentBtn"
+                android:onClick="btnClock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:text="评论" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/back"
+            android:background="#fff"
+            android:onClick="btnClock"
+            android:src="@drawable/btn_house_detail_back"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageButton
+            android:onClick="btnClock"
+            android:layout_margin="10dp"
+            android:id="@+id/favorite"
+            android:background="#fff"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_house_detail_favorite"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"  />
+
+        <ImageButton
+            android:onClick="btnClock"
+            android:layout_margin="10dp"
+            android:id="@+id/share"
+            android:background="#fff"
+            android:layout_below="@id/favorite"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_house_detail_share"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"  />
+
+        <ImageButton
+            android:onClick="btnClock"
+            android:layout_margin="20dp"
+            android:id="@+id/num"
+            android:background="#000"
+            android:layout_below="@id/share"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_num_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/framelayout_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout"></FrameLayout>
+    </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发表评论"
+        />
+
+</RelativeLayout>
+
+

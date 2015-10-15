@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#50ebff">
+
+        <ImageButton
+            android:id="@+id/imageButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#50ebff"
+
+            android:onClick="cancel"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="楼盘位置"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/textView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="top"
+    android:background="@drawable/map_tips"
+    android:text="34324432fdsfsfsf4234432432432423"
+    android:textColor="#fff"
+    android:textSize="10sp"
+    >
+
+</TextView>

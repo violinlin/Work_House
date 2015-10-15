@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#50ebff">
+
+        <ImageButton
+            android:id="@+id/imageButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#50ebff"
+            android:onClick="cancel"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="打折优惠"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <Button
+            android:id="@+id/area"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="区域"
+            android:onClick="clickBtn"
+            android:textColor="#000"></Button>
+
+        <Button
+            android:id="@+id/category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="类别"
+            android:onClick="clickBtn"
+            android:textColor="#000"></Button>
+
+        <Button
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="价格"
+            android:onClick="clickBtn"
+            android:textColor="#000"></Button>
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="打折"
+            android:onClick="clickBtn"
+            android:textColor="#000"></Button>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textCount"
+            android:background="#f6fff1">
+
+        </ListView>
+
+        <ImageView
+            android:id="@+id/waitImageViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/wait_tea" />
+    </FrameLayout>
+
+
+</LinearLayout>

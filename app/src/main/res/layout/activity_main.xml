@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#77e9ff">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择城市"
+            android:textColor="#FFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/cancelBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#6fe1ff"
+            android:onClick="cancel"
+            android:text="取消"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+    <android.widget.SearchView
+        android:id="@+id/searchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="中文/拼音/首字母"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="10dp"
+         />
+
+    <LinearLayout
+        android:id="@+id/locallayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchCity"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_locate_city" />
+
+        <TextView
+            android:id="@+id/localTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="backLoackCity"
+            android:layout_below="@id/searchCity"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="定位"
+
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/locallayout">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </FrameLayout>
+    <com.whl.hp.work_house.view.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@id/locallayout"></com.whl.hp.work_house.view.SideBar>
+
+
+</RelativeLayout>

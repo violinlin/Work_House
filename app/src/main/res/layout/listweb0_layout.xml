@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/webIV"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_toRightOf="@id/webIV"
+        android:id="@+id/webTitle"
+        android:text="title"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@id/webIV"
+        android:id="@+id/websummary"
+        android:layout_below="@id/webTitle"
+        android:layout_alignBaseline="@id/webIV"
+        android:text="title"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:id="@+id/webcomment"
+        android:layout_below="@id/websummary"
+        android:text="rerer"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/webIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

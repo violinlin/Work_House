@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/fragmentID"
+        android:layout_weight="2"
+        tools:context=".MainActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:background="#887cffe0"
+            android:orientation="horizontal">
+
+            <!-- 标题 -->
+
+
+            <TextView
+                android:id="@+id/titleId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <!-- 导航图片所在的布局控件 -->
+
+
+            <LinearLayout
+                android:id="@+id/navLayoutId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

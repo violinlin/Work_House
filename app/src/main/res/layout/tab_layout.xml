@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="100dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/newHouseLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/newHouseID"
+            android:background="#fff"
+            android:onClick="tabClick"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/tab_new_house" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="首页" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/discoverLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:background="#fff"
+            android:onClick="tabClick"
+            android:id="@+id/discoverID"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tab_discover" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发现" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:background="#fff"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:onClick="tabClick"
+            android:id="@+id/messageID"
+            android:layout_height="30dp"
+            android:src="@drawable/tab_message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="消息" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mineLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:background="#fff"
+            android:onClick="tabClick"
+            android:id="@+id/mineID"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/tab_mine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的" />
+
+    </LinearLayout>
+
+</LinearLayout>
